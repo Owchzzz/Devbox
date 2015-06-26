@@ -1,0 +1,153 @@
+.diagram-container {
+	display:block;
+	position:relative;
+	background-color:white;
+
+	border:2px solid #e0e0e0;
+}
+
+.diagram-container .header {
+	display:block;
+	background-color:#f2f2f2;
+	padding:15px;
+	min-height:50px;
+	border-bottom:1px solid #e0e0e0;
+}
+
+.diagram-container #img-diagram{
+	display:block;
+	position:relative;
+	margin:0 auto;
+	cursor:pointer;
+	border:1px solid #fafafa;
+	width:20%;
+}
+
+.diagram-container .diagram-box {
+	position:absolute;
+	display:block;
+	width:20%;
+	color:white;
+	background-color:#2590c2;
+	border:1px solid #2383b0;
+	padding:15px;
+	top:0;
+	left:0;
+	text-align:center;
+	cursor:pointer;
+}
+
+.diagram-box:hover { 
+	border:3px dashed red;
+}
+
+.diagram-cbox {
+	display:none;
+	position:absolute;
+	top:0;
+	width:70%;
+	background-color:white;
+	color:black;
+	padding:15px;
+	line-height:1.2;
+	border:1px solid #e3e3e3;
+}
+
+.diagram-container .diagram-box a {
+	color:white;
+	text-decoration:none;
+}
+.diagram-container .diagram-box a:hover {
+	color:white;
+}
+
+.diagram-container .diagram-box h1 {
+	font-size:14px;
+}
+
+.diagram-container #content_box_1 {
+	top:120px;
+	left:14%;
+}
+
+
+.diagram-container #content_box_2 {
+	top:160px;
+	left:64%;
+}
+
+
+.diagram-container #content_box_3 {
+	top:320px;
+	left:14%;
+}
+
+.diagram-container #content_box_4 {
+	top:360px;
+	left:64%;
+}
+
+
+.diagram-container #content_box_5 {
+	top:520px;
+	left:14%;
+}
+
+.hidden-div {
+	display:none;
+}
+
+.ui-btn-set {
+	font-weight:bold;
+	background-color:#e8e8e8;
+	border:1px solid #dedede;
+	display:block;
+	padding:15px 25px;
+	font-size:16px;
+	cursor:pointer;
+	width:200px;
+}
+
+.edit-cbox {
+	
+	display:block;
+	visibility:hidden;
+	opacity:0;
+	width:80%;
+	height:380px;
+	position:absolute;
+	margin:0px auto;
+	top:30%;
+	left:5%;
+	background-color:#e5e5e5;
+	padding:25px;
+	border:1px solid #fafafa;
+}
+
+.edit-cbox .exit-btn {
+	display:block;
+	float:right;
+	width:30px;
+	height:30px;
+	font-size:30px;
+	cursor:pointer;
+}
+
+.edit-cbox h4 {
+	margin:0px !important;
+	padding:0px !important;
+}
+
+.edit-cbox > .contents {
+	position:relative;display:block;
+}
+
+.edit-cbox textarea {
+	margin-top:40px;
+	background-color:transparent;
+	height:100px;;
+}
+
+.edit-cbox input {
+	margin-bottom:20px;
+}
