@@ -94,12 +94,14 @@ class AWPCP_Pages {
 	}
 	
 	private function valid_payment_check($db,$id) {
+		echo 'Validating option: ';
 		global $wpdb;
 		$sql = "SELECT * FROM {$db} WHERE id='{$id}'";
 		$data = $wpdb->get_row($sql,ARRAY_A);
 		if($data['payment_status'] == 'Completed' || $data['payment_status'] == 'Failed') return false;
-		
+		echo 'true.';
 		return true;
+		
 	}
 	
 	private function success_ad_payment($db,$payment_id) {
@@ -111,10 +113,10 @@ class AWPCP_Pages {
 			'payment_status' => 'Completed',
 		);
 		$result = $wpdb->update($db,$updarray,array('id'=>$payment_id));
-		if($result !== FALSE) {
-			return true;
+		if($result === FALSE) {
+			return false;
 		}
-		else return false;
+		else return true;
 	}
 	
 	private function reflect_ad_payment($status,$db,$payment) {
